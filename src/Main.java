@@ -1,7 +1,17 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-    public static void main(String[] args) {
 
+public class Main {
+    private final static CourseService courseService = new CourseServiceImp();
+    public static void main(String[] args) {
+        while (true){
+            switch (View.menu()){
+                case 0->{System.exit(0);}
+                case 1->courseService.addNewCourse();
+                case 2-> courseService.getAllCourses();
+                case 3->{
+                    courseService.getCourseById();
+                }
+                default -> System.out.println("No Option. :(");
+            }
+        }
     }
 }

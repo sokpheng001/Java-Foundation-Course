@@ -1,5 +1,5 @@
 
-application.properties
+application.yaml
 ### IntelliJ IDEA ###
 out/
 !**/src/main/**/out/
